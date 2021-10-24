@@ -82,6 +82,14 @@ It should be something like this:
 Run this if there is a requirements file, this will download all the required packages quickly.
 
     cat requirements.txt
+    
+**Changing Jupyter Kernal:**
+
+You'll likely have to change the kernal to the version of python you have created in your virtual environment.  in VS code press Ctrl+Shift+P to open up the VS code navigation prompt. Then type in the words:
+
+    Jupyter: Select Interpreter to start Jupyter server
+
+Press enter then navigate to and select python.exe. This should be in venv\Scripts. VS code will likely prompt you to download some Jupyter software, allow the download. This will likely have to be done with the Python interpreter as well if you are running a pure .py script. Same steps just use Python: Select Python Interpreter.
 
 ## Preparing an environment for production
 You would do this when you are done writing the script and going to put it into usage.
