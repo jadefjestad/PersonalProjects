@@ -89,7 +89,7 @@ You'll likely have to change the kernal to the version of python you have create
 
     Jupyter: Select Interpreter to start Jupyter server
 
-Press enter then navigate to and select python.exe. This should be in venv\Scripts. VS code will likely prompt you to download some Jupyter software, allow the download. This will likely have to be done with the Python interpreter as well if you are running a pure .py script. Same steps just use Python: Select Python Interpreter.
+Press enter then navigate to and select python.exe. This should be in venv\Scripts. VS code will likely prompt you to download some Jupyter software, allow the download. This will likely have to be done with the Python interpreter as well if you are running a pure .py script. Same steps just use Python: Select Python Interpreter. If it doesn't pop up try reload the vs code window by doing Ctrl+Shift+P and selecting "Reload Window".
 
 ## Preparing an environment for production
 You would do this when you are done writing the script and going to put it into usage.
