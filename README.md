@@ -99,3 +99,27 @@ You would do this when you are done writing the script and going to put it into 
 This will make it easy for someone else to download the correct package versions.
 
     pip freeze > requirements.text
+    
+## Anaconda
+
+Anaconda must be downloaded from the Anaconda website. These steps can be done within the Anaconda.navigator app or from the cmd. The cmd steps are listed below.
+
+**Check for updates**
+
+    conda update conda
+    
+**Create new conda environment**
+
+    conda create -n <NAME-OF-ENVIRONMENT> <OPTIONAL-PARAMETERS-NAME-PACKAGES-DOWNLOADED-WITH-ENVIRONMENT> <OPTIONAL-python=3.10>
+    
+**Activate Environment**
+
+    activate <NAME-OF-ENVIRONMENT>
+    
+**Install packages**
+
+    conda install tensorflow
+    
+**Deactivate Environment
+
+    conda deactivate
