@@ -114,7 +114,7 @@ Anaconda must be downloaded from the Anaconda website. These steps can be done w
     
 **Activate Environment**
 
-    activate <NAME-OF-ENVIRONMENT>
+    conda activate <NAME-OF-ENVIRONMENT>
     
 **Install packages**
 
