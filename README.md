@@ -120,6 +120,6 @@ Anaconda must be downloaded from the Anaconda website. These steps can be done w
 
     conda install tensorflow
     
-**Deactivate Environment
+**Deactivate Environment**
 
     conda deactivate
