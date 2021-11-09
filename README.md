@@ -126,6 +126,4 @@ I typically use Jupyter Notebooks in VS code version
 **Creating a folder**
 
     import os
-    experiment_folder = 'diabetes_pipeline'
-    os.makedirs(experiment_folder, exist_ok=True)
-    print(experiment_folder)
+    os.makedirs(<name-of-new-folder>, exist_ok=True) # does not overwrite
