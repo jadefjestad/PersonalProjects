@@ -127,3 +127,11 @@ I typically use Jupyter Notebooks in VS code version
 
     import os
     os.makedirs(<name-of-new-folder>, exist_ok=True) # does not overwrite
+    
+## Docker
+    
+Docker is simular to virtual enviornmnets, but not quite.
+
+**Docker Usage Summary**
+
+    https://gist.github.com/adamveld12/4815792fadf119ef41bd
