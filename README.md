@@ -113,3 +113,19 @@ Anaconda must be downloaded from the Anaconda website. These steps can be done w
 **Deactivate Environment**
 
     conda deactivate
+    
+## Jupyter 
+
+I typically use Jupyter Notebooks in VS code version
+
+**Create Python file from Jupyter cell**
+
+    %%writefile $experiment_folder/prep_diabetes.py
+    # creates a python file called "prep_diabetes.py" in the "experiment_folder" (folder must be already created)
+    
+**Creating a folder**
+
+    import os
+    experiment_folder = 'diabetes_pipeline'
+    os.makedirs(experiment_folder, exist_ok=True)
+    print(experiment_folder)
