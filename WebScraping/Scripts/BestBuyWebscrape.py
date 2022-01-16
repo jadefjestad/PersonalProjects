@@ -48,6 +48,7 @@ if df_old['ProductNames'].tolist() != df_new['ProductNames'].tolist():
     df_replace.to_csv('WebScraping/Data/ProductNamesOld.csv', index=False)
     df_new.to_csv('WebScraping/Data/ProductNamesNew.csv', index=False)
 
+    number_of_new_items=0
     message = '''\
 Subject: MONITOR CHANGE (Best Buy)\n\nNew items on page:\n'''
     print("New items on page:")
@@ -56,11 +57,12 @@ Subject: MONITOR CHANGE (Best Buy)\n\nNew items on page:\n'''
         if i not in df_old['ProductNames'].tolist():
             message += i + '\n'
             print(i)
+            number_of_new_items += 1
 
-    print("Sent Text?" + str(helpmewebscrape.send_email(message, 
-        sender_email=os.getenv('EMAIL_SENDER_MOBILE'), 
+    print("Sent Text?" + str(helpmewebscrape.send_email('\ Subject: MONITOR CHANGE (Best Buy)\nHey! There are {} new monitors on Best Buy. Check your email for details'.format(number_of_new_items), 
+        sender_email=os.getenv('EMAIL_SENDER'), 
         password=os.getenv('PASSWORD_EMAIL'), 
-        receiver_email=os.getenv('EMAIL_RECEIVER'))))
+        receiver_email=os.getenv('EMAIL_RECEIVER_MOBILE'))))
 
     print("Sent Email?" + str(helpmewebscrape.send_email(message, 
         sender_email=os.getenv('EMAIL_SENDER'), 
@@ -69,8 +71,6 @@ Subject: MONITOR CHANGE (Best Buy)\n\nNew items on page:\n'''
 
 else:
     print('No change on page')
-
-#---------
 
 #---------
 
