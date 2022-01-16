@@ -1,0 +1,1 @@
+"C:\Users\Jade\anaconda3\envs\Selenium\python.exe" "C:\Users\Jade\Documents\GitHub\PersonalProjects\WebScraping\Scripts\BestBuyWebscrape.py"

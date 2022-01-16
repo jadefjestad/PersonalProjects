@@ -59,7 +59,7 @@ Subject: MONITOR CHANGE (Best Buy)\n\nNew items on page:\n'''
             print(i)
             number_of_new_items += 1
 
-    print("Sent Text?" + str(helpmewebscrape.send_email('\ Subject: MONITOR CHANGE (Best Buy)\nHey! There are {} new monitors on Best Buy. Check your email for details'.format(number_of_new_items), 
+    print("Sent Text?" + str(helpmewebscrape.send_email('\ \nSubject: MONITOR CHANGE (Best Buy)\nHey! There are {} new monitors on Best Buy. Check your email for details'.format(number_of_new_items), 
         sender_email=os.getenv('EMAIL_SENDER'), 
         password=os.getenv('PASSWORD_EMAIL'), 
         receiver_email=os.getenv('EMAIL_RECEIVER_MOBILE'))))
