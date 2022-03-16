@@ -88,7 +88,7 @@ You would do this when you are done writing the script and going to put it into 
 
 This will make it easy for someone else to download the correct package versions.
 
-    pip freeze > requirements.text
+    pip freeze > requirements.txt
     
 ## Anaconda
 
