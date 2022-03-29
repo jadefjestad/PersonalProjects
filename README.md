@@ -135,3 +135,10 @@ Docker is simular to virtual enviornmnets, but not quite.
 **Docker Usage Summary**
 
     https://gist.github.com/adamveld12/4815792fadf119ef41bd
+    
+## Git
+
+**Revert Commit**
+
+    git reset --hard [previous Commit SHA id here]
+    git push origin [branch Name] -f
