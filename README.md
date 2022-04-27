@@ -71,7 +71,7 @@ It should be something like this:
 
 Run this if there is a requirements file, this will download all the required packages quickly.
 
-    cat requirements.txt
+    pip install -r requirements.txt
     
 **Changing Jupyter Kernal:**
 
