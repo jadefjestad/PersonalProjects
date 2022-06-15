@@ -86,9 +86,11 @@ You would do this when you are done writing the script and going to put it into 
 
 **Creating a requirements text doc:**
 
-This will make it easy for someone else to download the correct package versions.
+This will make it easy for someone else to download the correct package versions. Use the conda list command, not pip freeze.
 
     pip freeze > requirements.txt
+    
+    conda list --explicit > bio-env.txt
     
 ## Anaconda
 
