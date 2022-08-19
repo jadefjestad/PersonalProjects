@@ -144,3 +144,8 @@ Docker is simular to virtual enviornmnets, but not quite.
 
     git reset --hard [previous Commit SHA id here]
     git push origin [branch Name] -f
+    
+**Remove Sensitive Credentials from History**
+
+    https://stackoverflow.com/a/14656358/10205709
+    https://github.com/rtyley/bfg-repo-cleaner/issues/226
